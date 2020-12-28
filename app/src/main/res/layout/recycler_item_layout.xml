@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    
+    <TextView
+        android:id="@+id/mac_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HereIsMacName"
+        android:textSize="17dp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/last_sensing_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/end_Time"/>
+
+
+    <TextView
+        android:id="@+id/end_Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HereIsEndTime"
+        android:textSize="17dp"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mac_Name"
+        app:layout_constraintEnd_toEndOf="@+id/no_sensing_name"/>
+
+
+    <TextView
+        android:id="@+id/no_sensing_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HereIsEndTime"
+        android:textSize="17dp"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/end_Time"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/last_sensing_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LastTime"
+        android:textSize="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mac_Name"
+        app:layout_constraintEnd_toStartOf="@+id/end_Time"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    
+</androidx.constraintlayout.widget.ConstraintLayout>
